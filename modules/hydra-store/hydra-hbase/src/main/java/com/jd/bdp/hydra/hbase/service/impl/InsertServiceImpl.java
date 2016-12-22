@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package com.jd.bdp.hydra.hbase.service.impl;
 
@@ -29,6 +30,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /*
 trace:
 rowkey:serviceId+traceId//
@@ -53,7 +55,8 @@ familColume:trace
 Qualifier:{
 	traceId
 }
- */
+ *//*
+
 public class InsertServiceImpl extends HbaseUtils implements InsertService {
 
 //    public void createTable() {
@@ -193,4 +196,4 @@ public class InsertServiceImpl extends HbaseUtils implements InsertService {
     }
 
 
-}
+}*/

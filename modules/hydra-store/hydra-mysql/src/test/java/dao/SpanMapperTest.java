@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package dao;
 
@@ -23,11 +24,13 @@ import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
 import java.util.List;
 
+*/
 /**
  * User: biandi
  * Date: 13-5-8
  * Time: 下午4:55
- */
+ *//*
+
 public class SpanMapperTest extends AbstractDependencyInjectionSpringContextTests {
 
     @Override
@@ -104,3 +107,4 @@ public class SpanMapperTest extends AbstractDependencyInjectionSpringContextTest
         this.spanMapper = spanMapper;
     }
 }
+*/

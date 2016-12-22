@@ -48,17 +48,17 @@ public class ServiceMapperImpl implements ServiceMapper {
 
     @Override
     public void deleteService(ServicePara servicePara) {
-        sqlSession.delete("deleteService",servicePara);
+        sqlSession.delete("deleteService", servicePara);
     }
 
     @Override
     public void updateService(ServicePara servicePara) {
-        sqlSession.update("updateService",servicePara);
+        sqlSession.update("updateService", servicePara);
     }
 
     @Override
     public ServicePara getOneService(String id) {
-        return (ServicePara) sqlSession.selectOne("getServiceById",id);
+        return (ServicePara) sqlSession.selectOne("getServiceById", id);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class ServiceMapperImpl implements ServiceMapper {
 
     @Override
     public List<ServicePara> get(Integer appId) {
-        return (List<ServicePara>)sqlSession.selectList("getServiceByAppId", appId);
+        return sqlSession.selectList("getServiceByAppId", appId);
     }
 
     public void setSqlSession(SqlSessionTemplate sqlSession) {

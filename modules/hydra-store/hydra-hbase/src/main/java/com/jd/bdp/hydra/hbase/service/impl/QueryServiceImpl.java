@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package com.jd.bdp.hydra.hbase.service.impl;
 
@@ -33,11 +34,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+*/
 /**
  * User: biandi
  * Date: 13-4-17
  * Time: 下午1:27
- */
+ *//*
+
 public class QueryServiceImpl extends HbaseUtils implements QueryService {
 
     public JSONObject getTraceInfo(Long traceId) {
@@ -279,9 +282,11 @@ public class QueryServiceImpl extends HbaseUtils implements QueryService {
 //        }
 //    }
 
-//    /**
+//    */
+/**
 //     * 删除指定表名的rowKey下某时间戳的数据。
-//     */
+//     *//*
+
 //    public boolean delete(String tableName, String rowKey) {
 //        boolean result = false;
 //        HTableInterface hTable = null;
@@ -328,3 +333,4 @@ public class QueryServiceImpl extends HbaseUtils implements QueryService {
 //        QueryServiceImpl queryService =
 //    }
 }
+*/

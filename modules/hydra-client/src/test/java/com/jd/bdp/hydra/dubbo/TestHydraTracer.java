@@ -1,14 +1,17 @@
+/*
 package com.jd.bdp.hydra.dubbo;
 
 import com.jd.bdp.hydra.agent.Tracer;
 import org.junit.Test;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
+*/
 /**
  * User: xiangkui
  * Date: 13-4-7
  * Time: 下午6:26
- */
+ *//*
+
 public class TestHydraTracer extends AbstractDependencyInjectionSpringContextTests {
     Tracer tracer = Tracer.getTracer();
 
@@ -23,3 +26,4 @@ public class TestHydraTracer extends AbstractDependencyInjectionSpringContextTes
 //    public void testTracerInstance() throws Exception {
 //    }
 }
+*/

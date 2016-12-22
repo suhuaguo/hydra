@@ -41,7 +41,7 @@ public class AnnotationMapperImpl implements AnnotationMapper {
     public List<Absannotation> getAnnotations(List<Span> list) {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("spans", list);
-        return (List<Absannotation>)sqlSession.selectList("getAnnotations", map);
+        return sqlSession.selectList("getAnnotations", map);
     }
 
     @Override

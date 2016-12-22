@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package service;
 
@@ -25,11 +26,13 @@ import com.jd.bdp.hydra.store.inter.QueryService;
 import org.junit.Test;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
+*/
 /**
  * User: biandi
  * Date: 13-5-10
  * Time: 上午10:27
- */
+ *//*
+
 public class QueryServiceTest extends AbstractDependencyInjectionSpringContextTests {
 
     @Override
@@ -222,3 +225,4 @@ public class QueryServiceTest extends AbstractDependencyInjectionSpringContextTe
         this.annotationMapper = annotationMapper;
     }
 }
+*/

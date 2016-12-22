@@ -1,14 +1,14 @@
 package com.jd.bdp.hydra.agent;
 
-import com.alibaba.dubbo.common.logger.Logger;
-import com.alibaba.dubbo.common.logger.LoggerFactory;
+
 import com.jd.bdp.hydra.Annotation;
 import com.jd.bdp.hydra.BinaryAnnotation;
 import com.jd.bdp.hydra.Endpoint;
 import com.jd.bdp.hydra.Span;
-import com.jd.bdp.hydra.agent.support.*;
-import com.jd.bdp.hydra.dubbomonitor.HydraService;
-import com.jd.bdp.hydra.dubbomonitor.LeaderService;
+import com.jd.bdp.hydra.agent.support.SampleImp;
+import com.jd.bdp.hydra.agent.support.TraceService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Date: 13-3-19

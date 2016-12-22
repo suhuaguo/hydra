@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>3.1.2.RELEASE</version>
+            <version>4.3.4.RELEASE</version>
         </dependency>
         <!--针对hydra-mysql相关接口进行测试-->
         <dependency>

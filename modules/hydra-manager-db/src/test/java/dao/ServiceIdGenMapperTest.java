@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package dao;
 
@@ -21,11 +22,16 @@ import com.jd.bdp.hydra.mysql.persistent.entity.ServiceIdGen;
 import org.junit.Test;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+*/
 /**
  * User: biandi
  * Date: 13-4-16
  * Time: 上午10:34
- */
+ *//*
+
 public class ServiceIdGenMapperTest extends AbstractDependencyInjectionSpringContextTests {
 
 
@@ -63,3 +69,4 @@ public class ServiceIdGenMapperTest extends AbstractDependencyInjectionSpringCon
 
 
 }
+*/

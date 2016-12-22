@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package service;
 
@@ -25,11 +26,16 @@ import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+*/
 /**
  * User: biandi
  * Date: 13-4-16
  * Time: 上午11:05
- */
+ *//*
+
 public class TestServiceIdGenService extends AbstractDependencyInjectionSpringContextTests {
 
     @Test
@@ -102,3 +108,4 @@ public class TestServiceIdGenService extends AbstractDependencyInjectionSpringCo
         this.serviceIdGenMapper = serviceIdGenMapper;
     }
 }
+*/

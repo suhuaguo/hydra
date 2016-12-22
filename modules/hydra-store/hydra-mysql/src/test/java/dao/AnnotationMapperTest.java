@@ -1,3 +1,4 @@
+/*
 package dao;
 
 import com.jd.bdp.hydra.Span;
@@ -9,11 +10,13 @@ import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * User: biandi
  * Date: 13-5-9
  * Time: 下午3:37
- */
+ *//*
+
 public class AnnotationMapperTest extends AbstractDependencyInjectionSpringContextTests {
 
     @Override
@@ -81,3 +84,4 @@ public class AnnotationMapperTest extends AbstractDependencyInjectionSpringConte
         this.annotationMapper = annotationMapper;
     }
 }
+*/

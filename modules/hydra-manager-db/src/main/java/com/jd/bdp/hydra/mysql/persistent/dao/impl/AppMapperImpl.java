@@ -62,7 +62,7 @@ public class AppMapperImpl implements AppMapper {
 
     @Override
     public List<AppPara> getAll() {
-        return (List<AppPara>)sqlSession.selectList("getAppAll");
+        return sqlSession.selectList("getAppAll");
     }
 
     public void setSqlSession(SqlSessionTemplate sqlSession) {

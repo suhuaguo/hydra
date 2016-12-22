@@ -15,11 +15,9 @@
  */
 package com.jd.bdp.hydra.dubbo;
 
+
 import com.alibaba.dubbo.common.Constants;
 import com.alibaba.dubbo.common.extension.Activate;
-import com.alibaba.dubbo.common.extension.ExtensionLoader;
-import com.alibaba.dubbo.container.Container;
-import com.alibaba.dubbo.container.spring.SpringContainer;
 import com.alibaba.dubbo.remoting.TimeoutException;
 import com.alibaba.dubbo.rpc.*;
 import com.jd.bdp.hydra.BinaryAnnotation;
@@ -30,10 +28,6 @@ import com.jd.bdp.hydra.agent.support.TracerUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-
-import java.io.IOException;
 
 /**
  *
@@ -46,7 +40,8 @@ public class HydraFilter implements Filter {
     private Tracer tracer = null;
 
     // 调用过程拦截
-    public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
+    @Override
+    public Result invoke(Invoker<?> invoker, com.alibaba.dubbo.rpc.Invocation invocation) throws RpcException {
         //异步获取serviceId，没获取到不进行采样
         String serviceId = tracer.getServiceId(RpcContext.getContext().getUrl().getServiceInterface());
         if (serviceId == null) {
@@ -102,6 +97,7 @@ public class HydraFilter implements Filter {
         }
     }
 
+
     private void catchTimeoutException(RpcException e, Endpoint endpoint) {
         BinaryAnnotation exAnnotation = new BinaryAnnotation();
         exAnnotation.setKey(TracerUtils.EXCEPTION);
@@ -128,7 +124,7 @@ public class HydraFilter implements Filter {
         }
     }
 
-    private void invokerAfter(Invocation invocation, Endpoint endpoint, Span span, long end, boolean isConsumerSide) {
+    private void invokerAfter(com.alibaba.dubbo.rpc.Invocation invocation, Endpoint endpoint, Span span, long end, boolean isConsumerSide) {
         if (isConsumerSide && span.isSample()) {
             tracer.clientReceiveRecord(span, endpoint, end);
         } else {
@@ -139,7 +135,7 @@ public class HydraFilter implements Filter {
         }
     }
 
-    private void invokerBefore(Invocation invocation, Span span, Endpoint endpoint, long start) {
+    private void invokerBefore(com.alibaba.dubbo.rpc.Invocation invocation, Span span, Endpoint endpoint, long start) {
         RpcContext context = RpcContext.getContext();
         if (context.isConsumerSide() && span.isSample()) {
             tracer.clientSendRecord(span, endpoint, start);

@@ -38,7 +38,7 @@ public class SpanMapperImpl implements SpanMapper{
 
     @Override
     public List<Span> findSpanByTraceId(Long traceId) {
-        return (List<Span>)sqlSession.selectList("findSpanByTraceId", traceId);
+        return sqlSession.selectList("findSpanByTraceId", traceId);
     }
 
     @Override

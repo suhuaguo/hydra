@@ -1,6 +1,7 @@
 package com.jd.bdp.hydra.agent.support;
 
-import com.alibaba.dubbo.common.utils.StringUtils;
+
+import org.apache.commons.lang.StringUtils;
 
 /**
 

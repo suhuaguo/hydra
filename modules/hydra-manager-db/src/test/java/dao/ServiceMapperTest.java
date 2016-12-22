@@ -12,7 +12,8 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package dao;
 
@@ -24,11 +25,16 @@ import com.jd.bdp.hydra.mysql.persistent.entity.ServicePara;
 import org.junit.Test;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
+import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+*/
 /**
  * User: xiangkui
  * Date: 13-4-1
  * Time: 下午1:27
- */
+ *//*
+
 public class ServiceMapperTest extends AbstractDependencyInjectionSpringContextTests {
 
     @Override
@@ -38,7 +44,8 @@ public class ServiceMapperTest extends AbstractDependencyInjectionSpringContextT
     }
 
 
-    /**
+    */
+/**
      * # 测试数据库 #
      * 测试前提：所操作的数据库为空
      * 测试策略：
@@ -46,7 +53,8 @@ public class ServiceMapperTest extends AbstractDependencyInjectionSpringContextT
      * 2：修改这个实体Entity,查询这个实体，确认修改成功
      * 3：删除Entity，查询，确认为null
      * @throws Exception
-     */
+     *//*
+
     @Test
     public void testDataBaseOption()throws Exception{
         try {
@@ -144,3 +152,4 @@ public class ServiceMapperTest extends AbstractDependencyInjectionSpringContextT
         this.appMapper = appMapper;
     }
 }
+*/

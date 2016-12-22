@@ -12,24 +12,25 @@
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
+ *//*
+
 
 package com.jd.bdp.hydra.hbase.service.impl;
 
 import com.jd.bdp.hydra.Annotation;
 import com.jd.bdp.hydra.Span;
 import org.apache.commons.lang.StringUtils;
-import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hbase.HBaseConfiguration;
-import org.apache.hadoop.hbase.client.HTablePool;
+
 
 import java.util.List;
 
+*/
 /**
 
  * Date: 13-4-12
  * Time: 下午4:19
- */
+ *//*
+
 public class HbaseUtils {
     public static HTablePool POOL;
     public static Configuration conf = HBaseConfiguration.create(new Configuration());
@@ -150,3 +151,4 @@ public class HbaseUtils {
         return TR_T;
     }
 }
+*/

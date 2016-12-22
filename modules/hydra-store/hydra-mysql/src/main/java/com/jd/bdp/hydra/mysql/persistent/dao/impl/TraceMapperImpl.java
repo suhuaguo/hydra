@@ -20,7 +20,6 @@ import com.jd.bdp.hydra.mysql.persistent.dao.TraceMapper;
 import com.jd.bdp.hydra.mysql.persistent.entity.Trace;
 import org.mybatis.spring.SqlSessionTemplate;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,7 +37,7 @@ public class TraceMapperImpl implements TraceMapper{
         map.put("startTime", startTime);
         map.put("num", num);
         map.put("serviceId", serviceId);
-        return (List<Trace>) sqlSession.selectList("findTraces", map);
+        return sqlSession.selectList("findTraces", map);
     }
 
     @Override
@@ -49,7 +48,7 @@ public class TraceMapperImpl implements TraceMapper{
         map.put("num", num);
         map.put("durationMin", durationMin);
         map.put("durationMax", durationMax);
-        return (List<Trace>) sqlSession.selectList("findTracesByDuration", map);
+        return sqlSession.selectList("findTracesByDuration", map);
     }
 
     @Override
@@ -58,7 +57,7 @@ public class TraceMapperImpl implements TraceMapper{
         map.put("startTime", startTime);
         map.put("num", num);
         map.put("serviceId", serviceId);
-        return (List<Trace>) sqlSession.selectList("findTracesEx", map);
+        return sqlSession.selectList("findTracesEx", map);
     }
 
     public void addTrace(Trace t) {
