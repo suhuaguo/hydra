@@ -1,2 +1,3 @@
 分布式跟踪系统的改造
 1、将 metaq 改成 rocketmq
+2、改造 rocketmq 的日志收集客户端
